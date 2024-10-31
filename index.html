@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traktorku</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="assets/image/traktor.jpg"
+      type="image/x-png"
+    />
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header>
+      <!-- start menu -->
+      <nav>
+        <div class="logo">Traktorku</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <!-- Ikon hamburger -->
+        <ul id="nav-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kontak">Kontak kami</a></li>
+        </ul>
+      </nav>
+      <!-- end menu -->
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <!-- section hero -->
+      <section id="beranda" class="hero">
+        <div class="hero-left">
+          <h2>
+            Bergabunglah dengan ribuan petani sukses yang telah memilih traktor
+            kami! Dapatkan penawaran khusus hari ini!
+          </h2>
+          <a href="#produk" class="buy-button">Lihat Produk Kami</a>
+        </div>
+        <div class="hero-right">
+          <img src="assets/image/traktor.jpg" alt="Gambar Traktor" />
+        </div>
+      </section>
+      <!-- end section hero -->
+
+      <!-- section tentang -->
+      <section id="tentang" class="tentang">
+        <h1>Tentang Traktorku</h1>
+        <div class="content-about">
+          <div class="content">
+            <div class="tentangkami">
+              <article>
+                <div class="visi">VISI</div>
+                <p>
+                  Menjadi penyedia traktor terkemuka yang menyediakan mesin
+                  pertanian berkualitas tinggi dan inovatif.
+                </p>
+                <br />
+                <p>
+                  Mengedepankan kepuasan pelanggan dengan produk yang handal dan
+                  layanan purna jual yang optimal.
+                </p>
+              </article>
+            </div>
+            <div class="traktor">
+              <article>
+                <div class="misi">MISI</div>
+                <p>
+                  Memberikan solusi pertanian yang efisien melalui mesin traktor
+                  yang mudah digunakan dan perawatan yang sederhana.
+                </p>
+                <br />
+                <p>
+                  Meningkatkan produktivitas petani dengan teknologi terbaru dan
+                  pelatihan yang mendukung.
+                </p>
+              </article>
+            </div>
+          </div>
+          <aside class="profile">
+            <h4>Latar Belakang</h4>
+            <article>
+              <p>
+                Traktorku berdiri dengan tujuan untuk membantu petani
+                meningkatkan hasil panen melalui teknologi pertanian modern.
+              </p>
+              <br />
+              <p>
+                Dengan pengalaman bertahun-tahun di industri pertanian, kami
+                memahami kebutuhan petani akan alat yang efisien dan handal.
+              </p>
+              <br />
+              <p>
+                Kami percaya bahwa setiap petani berhak mendapatkan akses ke
+                traktor berkualitas yang dapat meningkatkan produktivitas dan
+                efisiensi kerja di lahan pertanian.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <!-- end section tentang -->
+
+      <!-- section produk -->
+      <section id="produk" class="produk">
+        <h1>Produk Kami</h1>
+        <div class="produk-container">
+          <div class="produk-item">
+            <img src="assets/image/produk/p-01.jpg" alt="Traktor 1" />
+            <h3>Traktor Model C</h3>
+            <p>Harga: Rp 30.000.000</p>
+            <a href="#" class="buy-button">Beli Sekarang</a>
+          </div>
+          <div class="produk-item">
+            <img src="assets/image/produk/p-02.jpg" alt="Traktor 2" />
+            <h3>Traktor Model D</h3>
+            <p>Harga: Rp 30.000.000</p>
+            <a href="#" class="buy-button">Beli Sekarang</a>
+          </div>
+          <div class="produk-item">
+            <img src="assets/image/produk/p-03.png" alt="Traktor 3" />
+            <h3>Traktor Model E</h3>
+            <p>Harga: Rp 45.000.000</p>
+            <a href="#" class="buy-button">Beli Sekarang</a>
+          </div>
+          <div class="produk-item">
+            <img src="assets/image/produk/p-04.jpg" alt="Traktor 4" />
+            <h3>Traktor Model F</h3>
+            <p>Harga: Rp 40.000.000</p>
+            <a href="#" class="buy-button">Beli Sekarang</a>
+          </div>
+        </div>
+      </section>
+      <!-- end section produk -->
+
+      <section id="kontak" class="kontak">
+        <h1>Kontak Kami</h1>
+        <div class="kontak-info">
+          <p>
+            Email: <a href="mailto:info@traktorku.com">info@traktorku.com</a>
+          </p>
+          <p>
+            Instagram:
+            <a href="https://instagram.com/traktorku" target="_blank"
+              >@traktorku</a
+            >
+          </p>
+          <p>
+            Facebook:
+            <a href="https://facebook.com/traktorku" target="_blank"
+              >Traktorku</a
+            >
+          </p>
+          <p>
+            YouTube:
+            <a href="https://youtube.com/traktorku" target="_blank"
+              >Traktorku Channel</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        © Copyright 2024, Toko Mesin Jaya Perkasa. All Rights Reserved
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        var navList = document.getElementById("nav-list");
+        navList.classList.toggle("show"); // Tambahkan/lepaskan kelas 'show' untuk menampilkan/menyembunyikan menu
+      }
+    </script>
+  </body>
+</html>

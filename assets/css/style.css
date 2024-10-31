@@ -1,0 +1,315 @@
+/* Mengatur ulang margin dan padding untuk semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Menghitung padding dan border dalam total width/height */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  transition: all 0.5s; /* Menambahkan efek transisi */
+}
+
+/* Mengatur font dasar untuk seluruh body */
+body {
+  font-family: Tahoma, sans-serif; /* Mengatur jenis font */
+}
+
+/* Mengatur padding untuk semua section */
+section {
+  padding: 2rem; /* Memberikan ruang di dalam section */
+}
+
+/* style menu */
+nav {
+  width: 100%; /* Lebar menu penuh */
+  height: 3rem; /* Tinggi menu */
+  display: flex; /* Menggunakan flexbox untuk tata letak menu */
+  justify-content: space-between; /* Mengatur ruang di antara item menu */
+  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+  padding: 0.3rem; /* Padding dalam menu */
+  position: fixed; /* Memperbaiki posisi menu di atas */
+  background-color: red; /* Mengubah latar belakang menjadi merah */
+  z-index: 1000; /* Menjaga menu di atas elemen lain */
+}
+
+.logo {
+  font-size: 1.8rem; /* Ukuran font untuk logo */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  color: white; /* Warna teks logo */
+  margin-left: 20px; /* Jarak kiri dari tepi */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks untuk efek menarik */
+}
+
+nav ul {
+  display: flex; /* Menggunakan flexbox untuk menu */
+  justify-content: space-evenly; /* Membagi ruang secara merata di antara item */
+  align-items: center; /* Menyelarankan item secara vertikal */
+  line-height: 30px; /* Tinggi garis menu */
+  font-size: 1.3rem; /* Ukuran font menu */
+  width: 100%; /* Memastikan menu memenuhi lebar penuh */
+  list-style: none; /* Menghilangkan titik hitam pada daftar */
+}
+
+nav ul li a {
+  color: #fff; /* Mengubah warna teks menjadi putih */
+  transition: 0.3s; /* Menambahkan efek transisi pada warna */
+}
+
+nav ul li a:hover {
+  border-bottom: 0.2rem solid #fff; /* Garis bawah saat hover */
+  padding: 0.3rem 0; /* Padding untuk garis bawah */
+}
+
+.menu-icon {
+  display: none; /* menon aktifkan menu humberger pada saat layar penuh*/
+}
+
+/* style hero section */
+.hero {
+  display: flex; /* Menggunakan flexbox untuk tata letak hero */
+  align-items: center; /* Vertically align items to the center */
+  justify-content: space-between; /* Rata kanan dan kiri untuk gambar dan teks */
+  flex-wrap: wrap; /* Memungkinkan elemen membungkus pada layar kecil */
+}
+
+.hero-left {
+  flex: 1; /* Bagian kiri untuk teks */
+  padding: 20px; /* Padding di dalam bagian teks */
+}
+
+.hero-right {
+  flex: 1; /* Bagian kanan untuk gambar */
+  padding: 20px; /* Padding di dalam bagian gambar */
+  display: flex; /* Membuat gambar dan konten di dalamnya juga flex */
+  justify-content: flex-end; /* Menggeser gambar ke kanan */
+}
+
+.hero-right img {
+  min-width: 10%; /* Lebar minimal gambar */
+  max-width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Menjaga rasio gambar */
+}
+
+/* Gaya untuk tombol beli */
+.buy-button {
+  background-color: #ff4545; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding di dalam tombol */
+  border-radius: 5px; /* Sudut melengkung tombol */
+  margin-top: 1rem; /* Jarak atas tombol */
+  display: inline-block; /* Mengatur tampilan tombol sebagai blok inline */
+  text-align: center; /* Mengatur teks di tengah tombol */
+}
+
+.buy-button:hover {
+  background-color: #ff6666; /* Warna latar belakang saat hover */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+/* style section tentang */
+.tentang {
+  padding: 2rem; /* Menambahkan padding untuk seluruh section */
+  background-color: #f2f2f2; /* Latar belakang putih sedikit gelap */
+}
+
+.content-about {
+  display: flex; /* Menggunakan flexbox untuk tata letak konten */
+  justify-content: space-between; /* Rata kanan dan kiri untuk konten */
+  align-items: flex-start; /* Menyusun item di bagian atas */
+  flex-wrap: wrap; /* Memungkinkan elemen membungkus pada layar kecil */
+}
+
+.content {
+  flex: 2; /* Memberikan lebih banyak ruang untuk konten utama */
+  display: flex; /* Flexbox untuk konten OneDaf dan Cosmetic */
+  justify-content: space-between; /* Rata kanan dan kiri untuk dua kolom */
+  flex-wrap: wrap; /* Memungkinkan kolom membungkus */
+}
+
+.tentangkami,
+.traktor {
+  flex: 1; /* Masing-masing bagian memiliki ruang yang sama */
+  margin: 0 1rem; /* Memberikan jarak antara kolom */
+  background-color: white; /* Latar belakang putih untuk bagian ini */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 1rem; /* Padding di dalam kolom */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+}
+
+/* Gaya untuk aside (profil) */
+.profile {
+  flex: 1; /* Memberikan ruang untuk aside */
+  margin-left: 1rem; /* Jarak antara konten dan aside */
+  background-color: white; /* Latar belakang putih untuk aside */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 1rem; /* Padding di dalam aside */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+  border-left: 3px solid #ff6f61; /* Garis merah muda di sisi kiri aside */
+}
+
+.profile img {
+  max-width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Menjaga rasio gambar */
+  border-radius: 5px; /* Sudut melengkung pada gambar */
+}
+
+/* Gaya untuk judul section tentang */
+.tentang h1 {
+  border-bottom: 2px solid #ff6f61; /* Garis bawah pada judul */
+  padding-bottom: 0.5rem; /* Jarak antara judul dan garis bawah */
+  margin-bottom: 1rem; /* Jarak antara judul dan konten di bawahnya */
+  color: #333; /* Warna teks judul */
+}
+
+/* Gaya untuk teks visi dan misi */
+.visi,
+.misi {
+  font-weight: bold; /* Menebalkan teks visi dan misi */
+  color: #ff6f61; /* Warna teks visi dan misi */
+  margin-bottom: 0.5rem; /* Jarak antara judul misi/visi dan konten */
+}
+
+.produk {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+.produk h1 {
+  text-align: center; /* Menyelaraskan judul ke tengah */
+  margin-bottom: 2rem; /* Jarak antara judul dan produk */
+  color: #333; /* Warna teks */
+}
+
+.produk-container {
+  display: flex; /* Menggunakan flexbox untuk tata letak produk */
+  flex-wrap: wrap; /* Memungkinkan produk untuk melipat jika tidak muat */
+  justify-content: space-around; /* Menjaga jarak antar produk */
+}
+
+.produk-item {
+  background-color: white; /* Latar belakang putih untuk produk */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  margin: 1rem; /* Jarak antara produk */
+  padding: 1rem; /* Padding di dalam kotak produk */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  width: 300px; /* Lebar tetap untuk produk */
+}
+
+.produk-item img {
+  max-width: 100%; /* Gambar responsif */
+  height: auto; /* Menjaga rasio gambar */
+  border-radius: 5px; /* Sudut melengkung pada gambar */
+}
+
+.produk-item h3 {
+  color: #ff6f61; /* Warna judul produk */
+  margin: 0.5rem 0; /* Jarak atas dan bawah */
+}
+
+.produk-item p {
+  color: #333; /* Warna deskripsi produk */
+  margin: 0.5rem 0; /* Jarak atas dan bawah */
+}
+
+/* style section kontak */
+.kontak {
+  padding: 2rem; /* Menambahkan padding untuk seluruh section */
+  background-color: #f2f2f2; /* Warna latar belakang yang lembut */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.kontak h1 {
+  border-bottom: 2px solid #ff6f61; /* Garis bawah pada judul */
+  padding-bottom: 0.5rem; /* Jarak antara judul dan garis bawah */
+  margin-bottom: 1rem; /* Jarak antara judul dan konten di bawahnya */
+  color: #333; /* Warna teks judul */
+}
+
+.kontak-info p {
+  margin: 1rem 0; /* Jarak antara setiap paragraf */
+  font-size: 1.2rem; /* Ukuran font untuk informasi kontak */
+  color: #333; /* Warna teks untuk informasi */
+}
+
+.kontak-info a {
+  color: #ff4545; /* Warna link */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  transition: color 0.3s; /* Transisi saat hover */
+}
+
+.kontak-info a:hover {
+  color: #ff6666; /* Warna saat hover pada link */
+}
+
+.footer {
+  background-color: #ff4545; /* Warna latar belakang footer */
+  color: white; /* Warna teks di footer */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  padding: 2rem 0; /* Menambahkan padding vertikal */
+  position: relative; /* Memastikan footer tetap di bawah halaman */
+  bottom: 0; /* Menempel di bagian bawah */
+  width: 100%; /* Memastikan footer memenuhi lebar penuh */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Bayangan untuk memberikan kedalaman */
+}
+
+.footer-content {
+  max-width: 1200px; /* Membatasi lebar konten footer */
+  margin: 0 auto; /* Menyelaraskan konten ke tengah */
+}
+
+.footer h2 {
+  margin-bottom: 1rem; /* Jarak antara judul dan konten di bawahnya */
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Menyembunyikan menu pada layar kecil */
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    background-color: red;
+  }
+
+  nav ul.show {
+    display: flex; /* Menampilkan menu jika aktif */
+  }
+
+  .menu-icon {
+    display: block; /* Hanya tampilkan ikon hamburger di layar kecil */
+    font-size: 2rem;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .hero {
+    flex-direction: column; /* Mengubah tata letak hero menjadi kolom */
+    text-align: center; /* Menyelaraskan teks di tengah */
+  }
+
+  .hero-right {
+    justify-content: center; /* Menggeser gambar ke tengah */
+    margin-top: 20px; /* Jarak atas untuk gambar */
+  }
+
+  .produk-container {
+    flex-direction: column; /* Mengubah tata letak produk menjadi kolom */
+    align-items: center; /* Menyelaraskan produk ke tengah */
+  }
+
+  .produk-item {
+    width: 90%; /* Lebar produk lebih kecil pada layar kecil */
+    margin: 0.5rem 0; /* Jarak vertikal antara produk */
+  }
+
+  .content-about {
+    flex-direction: column; /* Mengubah tata letak konten menjadi kolom */
+  }
+
+  .profile {
+    margin-left: 0; /* Menghilangkan margin kiri pada layar kecil */
+    margin-top: 20px; /* Jarak atas untuk aside */
+  }
+}
