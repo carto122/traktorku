@@ -68,6 +68,7 @@ nav ul li a:hover {
   align-items: center; /* Vertically align items to the center */
   justify-content: space-between; /* Rata kanan dan kiri untuk gambar dan teks */
   flex-wrap: wrap; /* Memungkinkan elemen membungkus pada layar kecil */
+  height: 100%;
 }
 
 .hero-left {
@@ -165,6 +166,11 @@ nav ul li a:hover {
   font-weight: bold; /* Menebalkan teks visi dan misi */
   color: #ff6f61; /* Warna teks visi dan misi */
   margin-bottom: 0.5rem; /* Jarak antara judul misi/visi dan konten */
+}
+
+article img {
+  width: 100%;
+  height: 80%;
 }
 
 .produk {
